@@ -11,7 +11,7 @@ AWS ECR: A fully managed Docker container registry that makes it easy to store, 
 ----------------------------------------------------------------------------------
 ## Step 1. AWS setup & cloning the source code from GitHub
 
-Login to AWS Console and create an EC2 instance and allow port 8080 in inbound rules.
+Login to AWS Console and create an EC2 instance and allow port 8050 in inbound rules.
 
 Name: ECR_ECS, AMI: Ubuntu 22.04, type:t2.micro > Launch Instance
 
@@ -114,9 +114,9 @@ Navigate to the ENI ID in the task.
 
 Go to the security group URL.
 
-Navigate to the Inbound rule in the security group and open the Port 8080 which is HTTP and select my IP to have access for myself.
+Navigate to the Inbound rule in the security group and open the Port 8050 which is HTTP and select my IP to have access for myself.
 
-Copy the Public Ip of the Container with port 8080, and the site will be live.
+Copy the Public Ip of the Container with port 8050, and the site will be live.
 
 Note: Don’t forget to Stop or Delete all clusters and services of ECS otherwise it will cost you.
 

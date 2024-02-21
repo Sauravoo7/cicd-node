@@ -4,4 +4,4 @@ services:
   web:
     image: 'sauravnayak/node-todo-test:latest'
     ports:
-      - "8080:8080"
+      - "8050:8050"
